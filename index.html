@@ -50,15 +50,18 @@ body {
 }
 
 .sidebar .closebtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #555;
-  color: rgb(255, 255, 255);
-  padding: 0px 0px;
-  border: none;
-  transform: translate(-10px,-145px);
-  
+  position: absolute;
+  top: 1px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+ transform: translate(25px,0px);
 }
+
+.pfpinnav{
+  transform: translate(0px,-25px);
+}
+
 
 .openbtn {
   font-size: 20px;
@@ -91,7 +94,7 @@ body {
 
 <div id="mySidebar" class="sidebar">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-  <a href="profile.html"> <img src="pfp.png" alt="pfp" width="50" height="50"
+  <a href="profile.html" class="pfpinnav" ><img src="pfp.png" alt="pfp" width="50" height="50"
     splat user001
     ></a>  
   <a href="index.html">home</a>
